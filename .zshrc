@@ -51,5 +51,8 @@ alias cat="bat"
 alias dev="docker start -i dev"
 alias fetch="fastfetch --logo Fedora_small -c ~/.config/fastfetch.jsonc"
 
+# Mellow colors for fzf.
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#c9c7cd,bg:#161617,hl:#aca1cf --color=fg+:#c9c7cd,bg+:#2a2a2d,hl+:#aca0cf --color=info:#90b99f,prompt:#e29eca,pointer:#e29eca --color=marker:#e6b99d,spinner:#e29eca,header:#c9c7cd'
+
 # Shell integrations
 eval "$(fzf --zsh)"
