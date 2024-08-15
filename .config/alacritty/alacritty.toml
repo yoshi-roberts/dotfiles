@@ -2,7 +2,7 @@
 decorations = "None"
 
 [font.normal]
-family = "Hack Nerd Font"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Regular"
 
 [colors.primary]

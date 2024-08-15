@@ -1,0 +1,3 @@
+[submodule ".config/calcurse"]
+	path = .config/calcurse
+	url = git@github.com:ezri-roberts/calcurse.git
