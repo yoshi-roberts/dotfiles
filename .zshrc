@@ -47,6 +47,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls="exa"
+alias cat="bat"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
