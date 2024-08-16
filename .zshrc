@@ -47,6 +47,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls="exa"
+alias cat="batcat"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
@@ -55,4 +56,5 @@ alias ....="cd ../../../"
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#c9c7cd,bg:#161617,hl:#aca1cf --color=fg+:#c9c7cd,bg+:#2a2a2d,hl+:#aca0cf --color=info:#90b99f,prompt:#e29eca,pointer:#e29eca --color=marker:#e6b99d,spinner:#e29eca,header:#c9c7cd'
 
 # Shell integrations
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(fzf --zsh)"
