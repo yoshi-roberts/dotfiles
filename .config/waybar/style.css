@@ -1,0 +1,93 @@
+* {
+    border: none;
+    border-radius: 0;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrainsMono Nerd Font Mono;
+    font-size: 15px;
+
+    min-height: 0;
+}
+
+window#waybar {
+    background: #161617;
+    border-bottom: 0px;
+    color: #c9c7cd;
+}
+
+tooltip {
+  background: #161617;
+  color: #c9c7cd;
+  border: 1px solid #c9c7cd;
+}
+tooltip label {
+  color: #c9c7cd;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: #9998a8;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+    background: transparent;
+    color: #c9c7cd;
+    border-bottom: 3px solid #e6b99d;
+}
+
+#workspaces button.focused {
+    background: transparent;
+    color: #c9c7cd;
+    border-bottom: 0px;
+}
+
+label.module {
+    padding: 0 8px;
+}
+
+#mode, #clock, #battery {
+    padding: 0 10px;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#temperature {
+    background-color: transparent;
+    color: #f5a191;
+}
+
+#network {
+    background-color: transparent;
+    color: #aca1cf;
+}
+
+#battery {
+    background-color: transparent;
+    color: #90b99f;
+}
+
+#battery.charging {
+    background-color: transparent;
+    color: #64727D;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
