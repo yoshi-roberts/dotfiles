@@ -1,6 +1,9 @@
 #!/usr/bin/sh
-sudo pacman -S unzip stow pamixer playerctl pavucontrol udiskie trash-cli \
-	chafa foot fzf exa bat waybar calcurse lf swaybg python-httplib2 ngw-look
+sudo pacman -S unzip fzf exa bat stow \
+	pamixer playerctl pavucontrol udiskie trash-cli lf \
+	chafa foot waybar calcurse swaybg ngw-look python-httplib2 \
+	firefox docker gdu bottom \
+	ttf-jetbrains-mono-nerd noto-fonts-emoji
 
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
@@ -9,5 +12,10 @@ makepkg -si
 cd ../ && rm -rf paru
 
 # AUR
-paru -S tofi brave-bin
+paru -S tofi
 
+systemctl enable --now docker.service
+sudo usermod -aG docker $USER
+
+# Wallpapers
+git clone https://codeberg.org/Moncii/wallpapers.git ~/Pictures/wallpapers
