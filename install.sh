@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 sudo pacman -S unzip fzf exa bat stow \
 	pamixer playerctl pavucontrol udiskie trash-cli lf \
-	chafa foot waybar calcurse swaybg ngw-look python-httplib2 \
+	chafa foot waybar calcurse swaybg nwg-look python-httplib2 \
 	firefox docker gdu bottom \
 	ttf-jetbrains-mono-nerd noto-fonts-emoji
 
