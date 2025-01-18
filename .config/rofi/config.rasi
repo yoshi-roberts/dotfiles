@@ -1,0 +1,10 @@
+@import "~/.config/rofi/master_config.rasi" 
+
+/* ---- Configuration ---- */
+configuration {
+	font: "RobotoMono Nerd Font Mono Regular 12";
+}
+
+element-text {
+    font:	"RobotoMono Nerd Font Mono Regular 12";
+}

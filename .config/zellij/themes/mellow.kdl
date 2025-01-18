@@ -1,0 +1,16 @@
+themes {
+   mellow {
+        fg 201 199 205
+        bg 22 22 23
+        black 22 22 23
+        red 234 131 165
+        green 144 185 159
+        yellow 230 185 157
+        blue 172 161 207
+        magenta 226 158 202
+        cyan 193 192 212
+        white 201 199 205
+        orange 245 161 145
+    }
+}
+

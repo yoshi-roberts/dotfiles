@@ -2,8 +2,8 @@
     border: none;
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: JetBrainsMono Nerd Font Mono;
-    font-size: 15px;
+    font-family: RobotoMono Nerd Font Mono;
+    font-size: 16px;
 
     min-height: 0;
 }
@@ -26,14 +26,15 @@ tooltip label {
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: #9998a8;
-    border-bottom: 3px solid transparent;
+    color: #57575f;
+    border-bottom: 0px;
 }
 
 #workspaces button.active {
     background: transparent;
     color: #c9c7cd;
-    border-bottom: 3px solid #e6b99d;
+    /* border-bottom: 0px solid #e6b99d; */
+    border-bottom: 0px;
 }
 
 #workspaces button.focused {

@@ -1,0 +1,15 @@
+configuration {
+	modi: "drun,run,filebrowser";
+    show-icons: false;
+    terminal: "foot";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "Search: ";
+    display-run: "Run: ";
+    display-filebrowser: "Filebrowser: ";
+    sidebar-mode: false;
+}
+
+@theme "~/.config/rofi/oldworld.rasi"
