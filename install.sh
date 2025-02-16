@@ -12,7 +12,8 @@ git clone https://aur.archlinux.org/yay.git
 cd yay && makepkg -si
 
 # AUR
-yay -S swayosd-git hyprshot qimgv
+yay -S hyprshot
+yay -S syshud
 
 # Start Services.
 systemctl enable --now swayosd-libinput-backend.service
@@ -20,6 +21,9 @@ systemctl enable --now thermald.service
 
 systemctl enable --now docker.service
 sudo usermod -aG docker $USER
+
+# Starship Prompt
+curl -sS https://starship.rs/install.sh | sh
 
 # Wallpapers
 git clone https://codeberg.org/moncii/wallpapers.git ~/Pictures/wallpapers
