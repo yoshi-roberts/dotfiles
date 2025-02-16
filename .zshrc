@@ -1,11 +1,5 @@
-# Prompt
-OMP=${XDG_DATA_HOME:-${HOME}/.local/bin}/oh-my-posh
-[ ! -e $OMP ] && curl -s https://ohmyposh.dev/install.sh | bash -s
-
 # Add ~/.local/bin to PATH
 export PATH=$PATH:$HOME/.local/bin
-
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/config.toml)"
 
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
@@ -52,9 +46,22 @@ alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 
+alias dev='
+if [[ "$(docker ps -q -f name=dev)" ]]; then
+  docker exec -it dev zsh
+else
+  docker start -i dev
+fi
+'
+
+# Exports
+export EDITOR=nvim
+export VISUAL=nvim
+
 # Mellow colors for fzf.
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#c9c7cd,bg:#161617,hl:#aca1cf --color=fg+:#c9c7cd,bg+:#2a2a2d,hl+:#aca0cf --color=info:#90b99f,prompt:#e29eca,pointer:#e29eca --color=marker:#e6b99d,spinner:#e29eca,header:#c9c7cd'
 
 # Shell integrations
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(fzf --zsh)"
+eval "$(starship init zsh)"

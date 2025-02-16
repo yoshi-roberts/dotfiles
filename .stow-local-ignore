@@ -1,2 +1,4 @@
 .git
 .gitmodules
+packages.txt
+install.sh
